@@ -2092,7 +2092,7 @@ body::-webkit-scrollbar-track {
 .sportiverse-section-text p {
     font-size: 1.1rem;
     line-height: 1.8;
-    color: #666;
+    color: black;
     margin-bottom: 20px;
 }
 
@@ -2125,7 +2125,7 @@ body::-webkit-scrollbar-track {
 
 /* Секция 1: Регистрация */
 .sportiverse-section-1 {
-    background-color: #f9f9f9;
+    background-color: #d395ee;
 }
 
 .sportiverse-section-1 .sportiverse-section-content {
