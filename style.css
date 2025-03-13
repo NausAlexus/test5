@@ -988,6 +988,112 @@ body::-webkit-scrollbar-track {
 
 
 
+
+
+
+
+.sport-select {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: 80px;
+    padding: 20px;
+}
+
+.sport-select h1 {
+    text-align: center;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.sport-select p {
+    text-align: center;
+    color: rgb(180, 180, 180);
+    margin-bottom: 40px;
+}
+
+.sport-select__concept-car-section {
+    background-color: #8a45b8;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 30px;
+}
+
+.sport-select__concept-car-section h2 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.sport-select__concept-team-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.sport-select__concept-card {
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    padding: 15px;
+    width: calc(33% - 20px);
+    transition: transform 0.3s;
+}
+
+.sport-select__concept-card:hover {
+    transform: scale(1.05);
+}
+
+.sport-select__concept-card img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+.sport-select__concept-card h3 {
+    color: #333;
+    margin: 10px 0;
+}
+
+.sport-select__concept-card p {
+    color: #666;
+    font-size: 0.9em;
+}
+
+@media (max-width: 768px) {
+    .sport-select__concept-card {
+        width: calc(50% - 20px);
+    }
+}
+
+@media (max-width: 480px) {
+    .sport-select__concept-card {
+        width: calc(100% - 20px);
+    }
+}
+
+.sport-select__learn-more-btn {
+    display: inline-block;
+    background-color: #a6ff00;
+    color: #34495e;
+    padding: 10px 20px;
+    border-radius: 10px;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.3s ease,
+                color 0.3s ease;
+}
+
+
+
+
+
+
+
+
+
+
 @media (min-width: 1025px) {
     .header-link:hover,
     .footer-brand:hover {
@@ -1015,5 +1121,9 @@ body::-webkit-scrollbar-track {
     }
     .browser-links a:hover, .privacy-link:hover {
         text-decoration: underline;
+    }
+    .sport-select__learn-more-btn:hover {
+        background-color: #8c33b3;
+        color: #a6ff00;
     }
 }
