@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BatBrigade - Contacts</title>
+    <meta name="description" content="Get in touch with BatBrigade! Whether you have questions about fantasy football, need support, or want to share your insights, we’re here to help. Join our community and let's elevate your fantasy game together!">
+    <link rel="stylesheet" href="/fonts/fontawesome/css/all.min.css" />
+    <link rel="icon" href="/img/favicon.ico" />
+    <link rel="stylesheet" href="/style.css" />
+
+    <script src="/burgerMenu.js" defer></script>
+
+</head>
+
+<body>
+    <header class="header">
+        <nav class="navigation">
+            <a class="header-link" href="/">BatBrigade</a>
+            <div class="burger-menu" id="burgerMenu">
+                <div class="burger-line"></div>
+                <div class="burger-line"></div>
+                <div class="burger-line"></div>
+            </div>
+            <ul class="nav-list" id="navList">
+                <li class="nav-item">
+                    <a class="nav-link" href="/">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/tournaments/">Tournaments</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/how-it-works/">How it works</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/app/">App</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/blog/">Blog</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/contacts/">Contacts</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="contact-main">
+        <section class="main4-sections" id="download">
+            <div class="container-signup-context">
+                <h1 class="signup-heading-context">
+                    Contact us with any questions and we will help you with everything!
+                </h1>
+                <div class="signup-content-context">
+                    <div class="signup-image-context">
+                        <img src="/img/contacts.jpg" alt="Sign Up">
+                    </div>
+                    <div class="signup-form-wrapper-context">
+
+
+                        <form id="signup-form-context" method="post" action="/thanks_form.php" class="signup-form-context">
+                            <label for="name" class="form-label-context">Full Name</label>
+                            <input type="text" id="name" name="name" class="form-input-context" placeholder="Enter your full name" required="">
+                            
+                            <label for="email" class="form-label-context">Email Address</label>
+                            <input type="email" id="email" name="email" class="form-input-context" placeholder="Enter your email address" required="">
+                            
+                            <div class="form-group privacy-check" style="
+                                display: flex;
+                                align-items: center;
+                                flex-direction: row;
+                                margin-bottom: 10px;
+                            ">
+                                <input type="checkbox" required="" name="privacypolicy" id="Privacy">
+                                <label for="Privacy">
+                                    I agree to the
+                                    <a href="/privacy-policy/" class="privacy-link-contacts">Privacy Policy</a>
+                                </label>
+                            </div>
+                            <button type="submit" class="form-button-context">
+                                Contact
+                            </button>
+                        </form>
+
+                        
+                        <div id="form-success-context" class="form-success-context hidden">
+                            Thank you for joining us! Please check your email for instructions on
+                            starting your fantasy sports adventure.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-content">
+            <div class="footer-details">
+                <a class="footer-brand" href="/">BatBrigade</a>
+                <a class="footer-location" href="https://maps.app.goo.gl/PAyscqcMWLx6VboC6" target="_blank">
+                    <i class="fas fa-map-marker-alt"></i>HWMP+C8W, Khera Dabar, Delhi, 110073, India
+                </a>
+                <a class="footer-phone" href="tel:+912767444369">
+                    <i class="fas fa-phone"></i> +912767444369
+                </a>
+                <a class="footer-email" href="mailto:contact@BatBrigade.com">
+                    <i class="fas fa-envelope"></i> contact@BatBrigade.com
+                </a>
+            </div>
+            <div class="footer-links">
+                <a href="/privacy-policy/">Privacy Policy</a>
+                <a href="/terms-conditions/">Terms And Conditions</a>
+                <a href="/cookies-policy/">Cookies Policy</a>
+            </div>
+            <div class="footer-badges">
+                <a href="https://www.gamcare.org" target="_blank">
+                    <img src="/img/ga-care2.png" alt="begamble" class="footer-badge" />
+                </a>
+                <img src="/img/18.jpg" alt="18+" class="footer-age-restriction" />
+            </div>
+        </div>
+        <p class="footer-warn">
+            HitAndWin Fantasy Cricket is exclusively for individuals who are 18 years old or older. Engaging in fantasy sports carries financial risks—please play wisely. Participation is prohibited in regions such as Andhra Pradesh, Assam, Nagaland, Odisha, Sikkim, and Telangana. Verify your local regulations before joining.
+        </p>
+        <p class="footer-rights">&copy; 2025 BatBrigade. All rights reserved.</p>
+    </footer>
+
+</body>
+
+</html>
