@@ -876,17 +876,6 @@ body::-webkit-scrollbar-track {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
 .terms-conditions {
     padding: 20px;
     margin-top: 70px;
@@ -944,7 +933,51 @@ body::-webkit-scrollbar-track {
         font-size: 14px;
     }
 }
+.cookies-policy {
+    padding: 20px;
+    margin-top: 70px;
+}
 
+.policy-title, .definition-title, .cookie-usage-title, .your-choices-title, .contact-title {
+    font-size: 24px;
+    margin-top: 20px;
+}
+
+.intro, .sensitive-info, .options-explanation {
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+.terms-list, .cookie-details, .contact-info {
+    margin-left: 20px;
+}
+
+.browser-links a, .privacy-link {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+/* Responsive behavior */
+@media (max-width: 768px) {
+    .cookies-policy {
+        padding: 10px;
+    }
+
+    .policy-title {
+        font-size: 20px;
+    }
+
+    .definition-title,
+    .cookie-usage-title,
+    .your-choices-title,
+    .contact-title {
+        font-size: 22px;
+    }
+
+    .intro, .sensitive-info, .options-explanation {
+        font-size: 14px;
+    }
+}
 
 
 
