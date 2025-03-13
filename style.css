@@ -1442,7 +1442,7 @@ body::-webkit-scrollbar-track {
 
 
 
-  }
+  
 
   .Sportiverse-about-section {
     display: flex;
@@ -1911,6 +1911,436 @@ body::-webkit-scrollbar-track {
     .us-compliance-notice, .severability-description, .waiver-description, 
     .translation-description, .changes-notice {
         font-size: 14px;
+    }
+}
+
+/* Основные стили для секций */
+.sportiverse-how-it-works-section {
+    padding: 80px 0;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+}
+
+.sportiverse-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.sportiverse-section-title {
+    font-size: 2.5rem;
+    color: #2c3e50;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.sportiverse-section-content {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.sportiverse-section-text {
+    flex: 1;
+}
+
+.sportiverse-section-text p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.sportiverse-section-text ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin-bottom: 20px;
+}
+
+.sportiverse-section-text ul li {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.sportiverse-section-image {
+    flex: 1;
+    text-align: center;
+}
+
+.sportiverse-section-image img {
+    max-width: 100%;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    height: 400px;
+    object-fit: cover;
+}
+
+/* Уникальные стили для каждой секции */
+
+/* Секция 1: Регистрация */
+.sportiverse-section-1 {
+    background-color: #f9f9f9;
+}
+
+.sportiverse-section-1 .sportiverse-section-content {
+    flex-direction: row;
+}
+
+.sportiverse-section-1 .sportiverse-section-button {
+    background-color: #3498db;
+    color: #fff;
+    padding: 12px 30px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.sportiverse-section-1 .sportiverse-section-button:hover {
+    background-color: #2980b9;
+}
+
+/* Секция 2: Создание команды */
+.sportiverse-section-2 {
+    background-color: #fff;
+}
+
+.sportiverse-section-2 .sportiverse-section-content {
+    flex-direction: row-reverse;
+}
+
+/* Секция 3: Подсчет баллов */
+.sportiverse-section-3 {
+    background-color: #f9f9f9;
+}
+
+.sportiverse-section-3 .sportiverse-section-content {
+    flex-direction: column;
+    text-align: center;
+}
+
+.sportiverse-points-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.sportiverse-point-card {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.sportiverse-point-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.sportiverse-point-icon {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.sportiverse-point-card h4 {
+    font-size: 1.5rem;
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+.sportiverse-point-card p {
+    font-size: 1rem;
+    color: #666;
+}
+
+/* Секция 4: Участие в турнирах */
+.sportiverse-section-4 {
+    background-color: #fff;
+}
+
+.sportiverse-section-4 .sportiverse-section-button {
+    background-color: #e74c3c;
+    color: #fff;
+    padding: 12px 30px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.sportiverse-section-4 .sportiverse-section-button:hover {
+    background-color: #c0392b;
+}
+
+/* Секция 5: Вывод средств */
+.sportiverse-section-5 {
+    background-color: #f9f9f9;
+}
+
+.sportiverse-section-5 .sportiverse-section-button {
+    background-color: #2ecc71;
+    color: #fff;
+    padding: 12px 30px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.sportiverse-section-5 .sportiverse-section-button:hover {
+    background-color: #27ae60;
+}
+
+/* Адаптация для планшетов и мобильных устройств */
+@media (max-width: 1024px) {
+    .sportiverse-section-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .sportiverse-section-image {
+        order: -1; /* Изображение сверху на мобильных */
+    }
+
+    .sportiverse-section-title {
+        font-size: 2rem;
+    }
+
+    .sportiverse-section-text p {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 700px) {
+    .sportiverse-section-title {
+        font-size: 1.8rem;
+    }
+
+    .sportiverse-section-text p {
+        font-size: 0.9rem;
+    }
+
+    .sportiverse-section-text ul li {
+        font-size: 0.9rem;
+    }
+}
+.sportiverse-section-text{
+    width: 100%;
+}
+
+/* Стили для секции 5: Community & Social Features */
+.sportiverse-section-5 {
+    background-color: #f9f9f9;
+    padding: 80px 0;
+}
+
+.sportiverse-section-title {
+    font-size: 2.5rem;
+    color: #2c3e50;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.sportiverse-section-intro {
+    font-size: 1.2rem;
+    color: #666;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+/* Стили для аккордеона */
+.sportiverse-accordion {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.sportiverse-accordion-item {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 15px;
+    overflow: hidden;
+    transition: box-shadow 0.3s ease;
+}
+
+.sportiverse-accordion-item:hover {
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.sportiverse-accordion-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    cursor: pointer;
+    background-color: #3e164f;
+    color: #fff;
+    border-radius: 10px 10px 0 0;
+}
+
+.sportiverse-accordion-header h3 {
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+.sportiverse-accordion-icon {
+    font-size: 1.5rem;
+    transition: transform 0.3s ease;
+}
+
+.sportiverse-accordion-content {
+    max-height: 0;
+    overflow: hidden;
+    padding: 0 20px;
+    transition: max-height 0.3s ease, padding 0.3s ease;
+}
+
+.sportiverse-accordion-content.open {
+    max-height: 200px; /* Adjust based on content */
+    padding: 20px;
+}
+
+.sportiverse-accordion-content p {
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.6;
+}
+
+/* Адаптация для мобильных устройств */
+@media (max-width: 700px) {
+    .sportiverse-section-title {
+        font-size: 2rem;
+    }
+
+    .sportiverse-section-intro {
+        font-size: 1rem;
+    }
+
+    .sportiverse-accordion-header h3 {
+        font-size: 1.2rem;
+    }
+
+    .sportiverse-accordion-content p {
+        font-size: 0.9rem;
+    }
+    .sportiverse-section-content{
+        flex-direction: column !important;
+    }
+}
+
+/* Основные стили для секции 2: Build Your Dream Team */
+.sportiverse-section-2 {
+    background-color: #f9f9f9;
+    padding: 80px 0;
+}
+
+.sportiverse-section-title {
+    font-size: 2.5rem;
+    color: #2c3e50;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.sportiverse-section-intro {
+    font-size: 1.2rem;
+    color: #666;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+/* Стили для прогресс-шагов */
+.sportiverse-progress-steps {
+    max-width: 800px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.sportiverse-progress-steps::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 20px;
+    width: 4px;
+    height: 100%;
+    background-color: #3498db;
+    z-index: 1;
+}
+
+.sportiverse-progress-step {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 40px;
+    position: relative;
+    z-index: 2;
+}
+
+.sportiverse-progress-icon {
+    width: 40px;
+    height: 40px;
+    background-color: #3498db;
+    color: #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-right: 20px;
+    flex-shrink: 0;
+}
+
+.sportiverse-progress-content {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    flex: 1;
+}
+
+.sportiverse-step-title {
+    font-size: 1.5rem;
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+.sportiverse-step-description {
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.6;
+}
+
+/* Адаптация для мобильных устройств */
+@media (max-width: 700px) {
+    .sportiverse-section-title {
+        font-size: 2rem;
+    }
+
+    .sportiverse-section-intro {
+        font-size: 1rem;
+    }
+
+    .sportiverse-progress-steps::before {
+        left: 15px;
+    }
+
+    .sportiverse-progress-icon {
+        width: 30px;
+        height: 30px;
+        font-size: 1rem;
+    }
+
+    .sportiverse-step-title {
+        font-size: 1.2rem;
+    }
+
+    .sportiverse-step-description {
+        font-size: 0.9rem;
     }
 }
 
