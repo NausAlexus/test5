@@ -16,6 +16,7 @@
 
     <script src="/burgerMenu.js" defer></script>
     <script src="/header.js" defer></script>
+    <script src="/faq.js" defer></script>
 
 </head>
 
@@ -53,24 +54,327 @@
 
     <main class="app-content">
 
-        <section class="app-hero">
-            <div class="container app">
-                <div class="app-content">
-                    <h1>Take Fantasy Sports Anywhere with Sportiverse</h1>
-                    <p class="app-subtitle">
-                        Assemble your dream team, monitor live scores, and compete with players from around the globe—all from your mobile device. The Sportiverse app is your entry point to an exciting fantasy sports adventure.
+
+        <!-- Секция 1: Герой-секция с призывом к действию -->
+        <section class="sportiverse-app-hero">
+            <div class="sportiverse-container">
+                <div class="sportiverse-hero-content">
+                    <h1 class="sportiverse-hero-title">Your Ultimate Fantasy Sports App</h1>
+                    <p class="sportiverse-hero-description">
+                        Join millions of players worldwide and experience the thrill of fantasy sports like never before. Download the Sportiverse app today and start building your dream team!
                     </p>
-                    <div class="app-buttons">
-                        <a href="/index.html#form" class="btn primary">Download for Android</a>
-                        <a href="/index.html#form" class="btn secondary">Download for iOS</a>
+                    <div class="sportiverse-hero-buttons">
+                        <a href="/contacts/" class="sportiverse-hero-button sportiverse-apple-button">
+                            Download on the <strong>Apple Store</strong>
+                        </a>
+                        <a href="/contacts/" class="sportiverse-hero-button sportiverse-google-button">
+                            Download on <strong>Google Play</strong>
+                        </a>
                     </div>
-                </div>
-                <div class="app-image">
-                    <img src="assets/img/new2.jpg" alt="Sportiverse Mobile App Preview">
                 </div>
             </div>
         </section>
+<!-- Секция 2: Преимущества приложения -->
+<section class="sportiverse-features">
+    <div class="sportiverse-container">
+        <h2 class="sportiverse-features-title">Why Choose Sportiverse?</h2>
+        <div class="sportiverse-features-layout">
+            <!-- Feature 1 -->
+            <div class="sportiverse-feature-card sportiverse-feature-card-1">
+                <div class="sportiverse-feature-icon">
+                    <img src="/img/app/app1.jpg" alt="Live Updates">
+                </div>
+                <h3 class="sportiverse-feature-title">Live Updates</h3>
+                <p class="sportiverse-feature-description">
+                    Stay updated with real-time scores, player stats, and match highlights.
+                </p>
+            </div>
 
+            <!-- Feature 2 -->
+            <div class="sportiverse-feature-card sportiverse-feature-card-2">
+                <div class="sportiverse-feature-icon">
+                    <img src="/img/app/app4.jpg" alt="Competitive Leagues">
+                </div>
+                <h3 class="sportiverse-feature-title">Competitive Leagues</h3>
+                <p class="sportiverse-feature-description">
+                    Join leagues, compete with friends, and win exciting prizes.
+                </p>
+            </div>
+
+            <!-- Feature 3 -->
+            <div class="sportiverse-feature-card sportiverse-feature-card-3">
+                <div class="sportiverse-feature-icon">
+                    <img src="/img/app/app3.jpg" alt="Easy to Use">
+                </div>
+                <h3 class="sportiverse-feature-title">Easy to Use</h3>
+                <p class="sportiverse-feature-description">
+                    Intuitive interface designed for both beginners and pros.
+                </p>
+            </div>
+
+            <!-- Feature 4 -->
+            <div class="sportiverse-feature-card sportiverse-feature-card-4">
+                <div class="sportiverse-feature-icon">
+                    <img src="/img/app/app2.jpg" alt="Multiple Sports">
+                </div>
+                <h3 class="sportiverse-feature-title">Multiple Sports</h3>
+                <p class="sportiverse-feature-description">
+                    Play fantasy cricket, football, kabaddi, and more in one app.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Секция 3: Join the Sportiverse Community -->
+<section class="sportiverse-community">
+    <div class="sportiverse-container">
+        <h2 class="sportiverse-community-title">Join the Sportiverse Community</h2>
+        <p class="sportiverse-community-intro">
+            Become part of a thriving community of sports enthusiasts. Share strategies, celebrate victories, and connect with like-minded players from around the world.
+        </p>
+        <div class="sportiverse-community-grid">
+            <!-- Community Feature 1 -->
+            <div class="sportiverse-community-card">
+                <div class="sportiverse-community-icon">👥</div>
+                <h3 class="sportiverse-community-feature-title">Connect with Players</h3>
+                <p class="sportiverse-community-feature-description">
+                    Join forums, chat with other players, and share tips to improve your game.
+                </p>
+            </div>
+
+            <!-- Community Feature 2 -->
+            <div class="sportiverse-community-card">
+                <div class="sportiverse-community-icon">🏅</div>
+                <h3 class="sportiverse-community-feature-title">Celebrate Achievements</h3>
+                <p class="sportiverse-community-feature-description">
+                    Show off your wins, climb the leaderboards, and earn recognition in the community.
+                </p>
+            </div>
+
+            <!-- Community Feature 3 -->
+            <div class="sportiverse-community-card">
+                <div class="sportiverse-community-icon">🎉</div>
+                <h3 class="sportiverse-community-feature-title">Exclusive Events</h3>
+                <p class="sportiverse-community-feature-description">
+                    Participate in community-only tournaments and special events with unique rewards.
+                </p>
+            </div>
+
+            <!-- Community Feature 4 -->
+            <div class="sportiverse-community-card">
+                <div class="sportiverse-community-icon">📢</div>
+                <h3 class="sportiverse-community-feature-title">Stay Updated</h3>
+                <p class="sportiverse-community-feature-description">
+                    Get the latest news, updates, and tips directly from the Sportiverse team.
+                </p>
+            </div>
+        </div>
+        <div class="sportiverse-community-cta">
+            <a href="/contacts/" class="sportiverse-community-button">Join Now</a>
+        </div>
+    </div>
+</section>
+<!-- Секция 4: Отзывы пользователей -->
+<section class="sportiverse-app-testimonials">
+    <div class="sportiverse-container">
+        <h2 class="sportiverse-testimonials-title">What Our Users Say</h2>
+        <div class="sportiverse-testimonials-grid">
+            <div class="sportiverse-testimonial-card">
+                <p class="sportiverse-testimonial-text">
+                    "Sportiverse has completely changed how I enjoy sports. The live updates and easy-to-use interface make it my go-to app!"
+                </p>
+                <div class="sportiverse-testimonial-author">
+                    <img src="/img/app/user1.jpg" alt="User 1" class="sportiverse-testimonial-avatar">
+                    <div class="sportiverse-testimonial-details">
+                        <span class="sportiverse-testimonial-name">John Doe</span>
+                        <span class="sportiverse-testimonial-location">Mumbai, India</span>
+                    </div>
+                </div>
+            </div>
+            <div class="sportiverse-testimonial-card">
+                <p class="sportiverse-testimonial-text">
+                    "I love the variety of sports available. Fantasy Kabaddi is my favorite!"
+                </p>
+                <div class="sportiverse-testimonial-author">
+                    <img src="/img/app/user2.jpg" alt="User 2" class="sportiverse-testimonial-avatar">
+                    <div class="sportiverse-testimonial-details">
+                        <span class="sportiverse-testimonial-name">Jane Smith</span>
+                        <span class="sportiverse-testimonial-location">Delhi, India</span>
+                    </div>
+                </div>
+            </div>
+            <div class="sportiverse-testimonial-card">
+                <p class="sportiverse-testimonial-text">
+                    "The competitive leagues are so much fun. I've won prizes and made new friends!"
+                </p>
+                <div class="sportiverse-testimonial-author">
+                    <img src="/img/app/user3.jpg" alt="User 3" class="sportiverse-testimonial-avatar">
+                    <div class="sportiverse-testimonial-details">
+                        <span class="sportiverse-testimonial-name">Mike Johnson</span>
+                        <span class="sportiverse-testimonial-location">Bangalore, India</span>
+                    </div>
+                </div>
+            </div>
+            <div class="sportiverse-testimonial-card">
+                <p class="sportiverse-testimonial-text">
+                    "I can track all my favorite teams in one place. Truly a game-changer for sports fans!"
+                </p>
+                <div class="sportiverse-testimonial-author">
+                    <img src="/img/app/user4.jpg" alt="User 4" class="sportiverse-testimonial-avatar">
+                    <div class="sportiverse-testimonial-details">
+                        <span class="sportiverse-testimonial-name">Priya Sharma</span>
+                        <span class="sportiverse-testimonial-location">Chennai, India</span>
+                    </div>
+                </div>
+            </div>
+            <div class="sportiverse-testimonial-card">
+                <p class="sportiverse-testimonial-text">
+                    "The app is intuitive and fun. I love playing with friends and competing in leagues!"
+                </p>
+                <div class="sportiverse-testimonial-author">
+                    <img src="/img/app/user5.jpg" alt="User 5" class="sportiverse-testimonial-avatar">
+                    <div class="sportiverse-testimonial-details">
+                        <span class="sportiverse-testimonial-name">Ravi Kumar</span>
+                        <span class="sportiverse-testimonial-location">Pune, India</span>
+                    </div>
+                </div>
+            </div>
+            <div class="sportiverse-testimonial-card">
+                <p class="sportiverse-testimonial-text">
+                    "From player stats to league standings, everything is at my fingertips. Highly recommended!"
+                </p>
+                <div class="sportiverse-testimonial-author">
+                    <img src="/img/app/user6.jpg" alt="User 6" class="sportiverse-testimonial-avatar">
+                    <div class="sportiverse-testimonial-details">
+                        <span class="sportiverse-testimonial-name">Anjali Mehta</span>
+                        <span class="sportiverse-testimonial-location">Hyderabad, India</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Секция FAQ -->
+<section class="sportiverse-faq">
+    <div class="sportiverse-container">
+        <h2 class="sportiverse-faq-title">Frequently Asked Questions</h2>
+        <p class="sportiverse-faq-intro">
+            Got questions? We've got answers! Check out our FAQ section to learn more about the Sportiverse app.
+        </p>
+        <div class="sportiverse-faq-grid">
+            <!-- Question 1 -->
+            <div class="sportiverse-faq-card">
+                <div class="sportiverse-faq-question" onclick="toggleAnswer(1)">
+                    <h3>1. How do I download the Sportiverse app?</h3>
+                    <span class="sportiverse-faq-icon">➕</span>
+                </div>
+                <p class="sportiverse-faq-answer" id="answer-1">
+                    You can download the Sportiverse app from the Apple Store or Google Play. Just search for "Sportiverse" and click "Install."
+                </p>
+            </div>
+
+            <!-- Question 2 -->
+            <div class="sportiverse-faq-card">
+                <div class="sportiverse-faq-question" onclick="toggleAnswer(2)">
+                    <h3>2. Is Sportiverse free to use?</h3>
+                    <span class="sportiverse-faq-icon">➕</span>
+                </div>
+                <p class="sportiverse-faq-answer" id="answer-2">
+                    Yes, the Sportiverse app is free to download and use. However, some contests may require an entry fee.
+                </p>
+            </div>
+
+            <!-- Question 3 -->
+            <div class="sportiverse-faq-card">
+                <div class="sportiverse-faq-question" onclick="toggleAnswer(3)">
+                    <h3>3. Can I play multiple sports on Sportiverse?</h3>
+                    <span class="sportiverse-faq-icon">➕</span>
+                </div>
+                <p class="sportiverse-faq-answer" id="answer-3">
+                    Absolutely! Sportiverse supports fantasy cricket, football, kabaddi, and more. You can switch between sports easily.
+                </p>
+            </div>
+
+            <!-- Question 4 -->
+            <div class="sportiverse-faq-card">
+                <div class="sportiverse-faq-question" onclick="toggleAnswer(4)">
+                    <h3>4. How do I create a fantasy team?</h3>
+                    <span class="sportiverse-faq-icon">➕</span>
+                </div>
+                <p class="sportiverse-faq-answer" id="answer-4">
+                    Simply select a match, choose your players within the budget, and assign a captain and vice-captain. Your team is ready to compete!
+                </p>
+            </div>
+
+            <!-- Question 5 -->
+            <div class="sportiverse-faq-card">
+                <div class="sportiverse-faq-question" onclick="toggleAnswer(5)">
+                    <h3>5. How are points calculated?</h3>
+                    <span class="sportiverse-faq-icon">➕</span>
+                </div>
+                <p class="sportiverse-faq-answer" id="answer-5">
+                    Points are based on real-time player performance, such as runs, wickets, goals, and more. Check the "Scoring System" section in the app for details.
+                </p>
+            </div>
+
+            <!-- Question 6 -->
+            <div class="sportiverse-faq-card">
+                <div class="sportiverse-faq-question" onclick="toggleAnswer(6)">
+                    <h3>6. Can I join multiple contests?</h3>
+                    <span class="sportiverse-faq-icon">➕</span>
+                </div>
+                <p class="sportiverse-faq-answer" id="answer-6">
+                    Yes, you can join as many contests as you like for a single match, as long as you have enough balance.
+                </p>
+            </div>
+
+            <!-- Question 7 -->
+            <div class="sportiverse-faq-card">
+                <div class="sportiverse-faq-question" onclick="toggleAnswer(7)">
+                    <h3>7. How do I withdraw my winnings?</h3>
+                    <span class="sportiverse-faq-icon">➕</span>
+                </div>
+                <p class="sportiverse-faq-answer" id="answer-7">
+                    Go to the "Wallet" section, select "Withdraw," and follow the instructions. Withdrawals are processed within 24-48 hours.
+                </p>
+            </div>
+
+            <!-- Question 8 -->
+            <div class="sportiverse-faq-card">
+                <div class="sportiverse-faq-question" onclick="toggleAnswer(8)">
+                    <h3>8. Is my personal information safe?</h3>
+                    <span class="sportiverse-faq-icon">➕</span>
+                </div>
+                <p class="sportiverse-faq-answer" id="answer-8">
+                    Yes, we use advanced encryption to protect your data. Your personal information is never shared with third parties.
+                </p>
+            </div>
+
+            <!-- Question 9 -->
+            <div class="sportiverse-faq-card">
+                <div class="sportiverse-faq-question" onclick="toggleAnswer(9)">
+                    <h3>9. What if I forget my password?</h3>
+                    <span class="sportiverse-faq-icon">➕</span>
+                </div>
+                <p class="sportiverse-faq-answer" id="answer-9">
+                    Click on "Forgot Password" on the login screen, enter your registered email, and follow the instructions to reset your password.
+                </p>
+            </div>
+
+            <!-- Question 10 -->
+            <div class="sportiverse-faq-card">
+                <div class="sportiverse-faq-question" onclick="toggleAnswer(10)">
+                    <h3>10. How do I contact customer support?</h3>
+                    <span class="sportiverse-faq-icon">➕</span>
+                </div>
+                <p class="sportiverse-faq-answer" id="answer-10">
+                    You can reach us via the "Support" section in the app or email us at contact@Sportiverse.com. We're here to help!
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
     </main>
 
     <footer class="site-footer">

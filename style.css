@@ -893,9 +893,546 @@ body::-webkit-scrollbar-track {
 
 
 
+/* Основные стили */
+.sportiverse-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Секция 1: Герой-секция */
+.sportiverse-app-hero {
+    background: linear-gradient(135deg, #5e34db, #752e7e);
+    color: #fff;
+    padding: 100px 0;
+    display: flex;
+    align-items: center;
+}
+
+.sportiverse-hero-content {
+    flex: 1;
+}
+
+.sportiverse-hero-title {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.sportiverse-hero-description {
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+}
+
+.sportiverse-hero-buttons {
+    display: flex;
+    gap: 20px;
+}
+
+.sportiverse-hero-button img {
+    width: 150px;
+}
+
+.sportiverse-hero-image {
+    flex: 1;
+    text-align: right;
+}
+
+.sportiverse-hero-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Секция 2: Преимущества */
+.sportiverse-app-features {
+    padding: 80px 0;
+    background-color: #f9f9f9;
+}
+
+.sportiverse-features-title {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 60px;
+    color: #2c3e50;
+}
+
+.sportiverse-features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.sportiverse-feature-card {
+    text-align: center;
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.sportiverse-feature-icon {
+    width: 100%;
+    height: 300px;
+    margin-bottom: 20px;
+}
+
+.sportiverse-feature-title {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #2c3e50;
+}
+
+.sportiverse-feature-description {
+    font-size: 1rem;
+    color: #666;
+}
+
+/* Секция 3: Как это работает */
+.sportiverse-app-how-it-works {
+    padding: 80px 0;
+}
+
+.sportiverse-how-it-works-title {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 60px;
+    color: #2c3e50;
+}
+
+.sportiverse-steps-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.sportiverse-step-card {
+    text-align: center;
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.sportiverse-step-number {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #3498db;
+    margin-bottom: 10px;
+}
+
+.sportiverse-step-title {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #2c3e50;
+}
+
+.sportiverse-step-description {
+    font-size: 1rem;
+    color: #666;
+}
+
+/* Секция 4: Отзывы */
+.sportiverse-app-testimonials {
+    padding: 80px 0;
+    background-color: #f9f9f9;
+}
+
+.sportiverse-testimonials-title {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 60px;
+    color: #2c3e50;
+}
+
+.sportiverse-testimonials-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.sportiverse-testimonial-card {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.sportiverse-testimonial-text {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.sportiverse-testimonial-author {
+    display: flex;
+    align-items: center;
+}
+
+.sportiverse-testimonial-avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.sportiverse-testimonial-name {
+    font-size: 1rem;
+    color: #2c3e50;
+}
 
 
 
+
+
+
+.sportiverse-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.sportiverse-hero-title {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.sportiverse-hero-description {
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+}
+
+.sportiverse-hero-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.sportiverse-hero-button {
+    display: inline-block;
+    padding: 15px 30px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.sportiverse-apple-button {
+    background-color: #000;
+    color: #fff;
+}
+
+.sportiverse-google-button {
+    background-color: #fff;
+    color: #000;
+}
+
+.sportiverse-hero-button:hover {
+    transform: translateY(-5px);
+    opacity: 0.9;
+}
+
+/* Основные стили для секции */
+.sportiverse-community {
+    background-color: #f9f9f9;
+    padding: 80px 0;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+}
+
+.sportiverse-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.sportiverse-community-title {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+.sportiverse-community-intro {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 60px;
+}
+
+/* Стили для сетки карточек */
+.sportiverse-community-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.sportiverse-community-card {
+    text-align: center;
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.sportiverse-community-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.sportiverse-community-icon {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.sportiverse-community-feature-title {
+    font-size: 1.5rem;
+    color: #2c3e50;
+    margin-bottom: 15px;
+}
+
+.sportiverse-community-feature-description {
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.6;
+}
+
+/* Стили для кнопки CTA */
+.sportiverse-community-cta {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.sportiverse-community-button {
+    display: inline-block;
+    background-color: #3498db;
+    color: #fff;
+    padding: 15px 30px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.sportiverse-community-button:hover {
+    background-color: #2980b9;
+}
+
+/* Основные стили для секции */
+.sportiverse-features {
+    background-color: #f9f9f9;
+    padding: 80px 0;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+}
+
+.sportiverse-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.sportiverse-features-title {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #2c3e50;
+    margin-bottom: 60px;
+}
+
+/* Асимметричный макет для карточек */
+.sportiverse-features-layout {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+    gap: 20px;
+    align-items: start;
+}
+
+@media (max-width:700px) {
+    .sportiverse-features-layout{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        width: 100%;
+
+    }
+.sportiverse-feature-card {
+    width: 100%;
+}
+    
+}
+
+/* Общие стили для карточек */
+.sportiverse-feature-card {
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+    background: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.sportiverse-feature-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* Иконки */
+.sportiverse-feature-icon img {
+    width: 100%;
+    margin-bottom: 20px;
+    height: 300px;
+    object-fit: cover;
+}
+
+/* Заголовки */
+.sportiverse-feature-title {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    color: #2c3e50;
+}
+
+/* Описание */
+.sportiverse-feature-description {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #666;
+}
+
+/* Индивидуальные стили для карточек */
+.sportiverse-feature-card-1 {
+    grid-column: 1 / 3;
+    background: linear-gradient(135deg, #3498db, #2c3e50);
+    color: #fff;
+}
+
+.sportiverse-feature-card-1 .sportiverse-feature-title,
+.sportiverse-feature-card-1 .sportiverse-feature-description {
+    color: #fff;
+}
+
+.sportiverse-feature-card-2 {
+    grid-column: 3 / 5;
+    background: linear-gradient(135deg, #e74c3c, #c0392b);
+    color: #fff;
+}
+
+.sportiverse-feature-card-2 .sportiverse-feature-title,
+.sportiverse-feature-card-2 .sportiverse-feature-description {
+    color: #fff;
+}
+
+.sportiverse-feature-card-3 {
+    grid-column: 1 / 2;
+    background: linear-gradient(135deg, #2ecc71, #27ae60);
+    color: #fff;
+}
+
+.sportiverse-feature-card-3 .sportiverse-feature-title,
+.sportiverse-feature-card-3 .sportiverse-feature-description {
+    color: #fff;
+}
+
+.sportiverse-feature-card-4 {
+    grid-column: 2 / 5;
+    background: linear-gradient(135deg, #9b59b6, #8e44ad);
+    color: #fff;
+}
+
+.sportiverse-feature-card-4 .sportiverse-feature-title,
+.sportiverse-feature-card-4 .sportiverse-feature-description {
+    color: #fff;
+}
+.sportiverse-testimonial-details{
+    color: black;
+}
+
+/* Основные стили для секции FAQ */
+.sportiverse-faq {
+    background-color: #fff;
+    padding: 80px 0;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+}
+
+.sportiverse-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.sportiverse-faq-title {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+.sportiverse-faq-intro {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 60px;
+}
+
+/* Сетка для вопросов */
+.sportiverse-faq-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+/* Стили для карточек вопросов */
+.sportiverse-faq-card {
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.sportiverse-faq-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.sportiverse-faq-question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.sportiverse-faq-question h3 {
+    font-size: 1.5rem;
+    color: #2c3e50;
+    margin: 0;
+}
+
+.sportiverse-faq-icon {
+    font-size: 1.5rem;
+    transition: transform 0.3s ease;
+}
+
+.sportiverse-faq-answer {
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.6;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease, padding-top 0.3s ease;
+}
+
+.sportiverse-faq-answer.open {
+    max-height: 200px; /* Adjust based on your content */
+    padding-top: 15px;
+}
+
+.sportiverse-faq-icon.open {
+    transform: rotate(45deg);
+}
 
 
 
