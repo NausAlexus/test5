@@ -476,12 +476,227 @@ body::-webkit-scrollbar-track {
   }
 
 
+/* Games Section Styles */
+.Fantasy-section {
+    background-color: var(--body-color);
+    padding: 20px 0;
+  }
+  .Fantasy-btn {
+    display: block;
+    max-width: 200px;
+    text-align: center;
+    margin: 30px auto;
+  }
+  
+  .Fantasy-section .wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .section-subtitle {
+    font-family: var(--font-body);
+    font-size: 1.2rem;
+    color: var(--text-color);
+    text-align: center;
+    margin-bottom: 60px;
+    animation: fadeInDown 1.2s ease-out;
+  }
+  
+  .Fantasy-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 40px;
+  }
+  
+  .game-block {
+    background-color: var(--text-color-second);
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .game-block:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+  }
+  
+  .game-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  .game-content {
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.347);
+  }
+  
+  .game-title {
+    font-family: var(--font-headings);
+    font-size: 1.8rem;
+    color: var(--heading-color);
+    margin-bottom: 15px;
+  }
+  
+  .game-description {
+    font-family: var(--font-body);
+    font-size: 1rem;
+    color: var(--text-color);
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+  
+  .game-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: var(--primary-color);
+    color: var(--text-color-second);
+    border-radius: 25px;
+    text-decoration: none;
+    font-family: var(--font-headings);
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+  
+  .game-button:hover {
+    background-color: var(--secondary-color);
+  }
+  
+  /* Animations */
+  @keyframes fadeInDown {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
 
   
 
 
 
 
+  .Blog-section {
+    background-color: var(--body-color);
+    padding: 100px 0;
+  }
+  
+  
+  
+  
+  .Blog-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Ð”Ð²Ðµ ÐºÐ¾Ð»Ð¾Ð½ÐºÐ¸ */
+    gap: 30px;
+    padding: 0 20px;
+  }
+  
+  .Blog-block {
+    background-color: var(--footer-header-bg);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .Blog-block:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  .Blog-image {
+    position: relative;
+    height: 250px;
+    overflow: hidden;
+  }
+  
+  .Blog-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+  }
+  
+  .Blog-block:hover .Blog-image img {
+    transform: scale(1.1);
+  }
+  
+  .Blog-title {
+    font-family: var(--font-headings);
+    font-size: 1.5rem;
+    color: var(--text-color-second);
+    margin: 0;
+    text-align: center;
+  }
+  .section-title{
+    text-align: center;
+  }
+  
+  .Blog-content {
+    padding: 20px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: rgba(0, 0, 0, 0.363);
+  }
+  
+  .Blog-excerpt {
+    font-family: var(--font-body);
+    font-size: 1rem;
+    color: var(--footer-header-text);
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+  
+  .Blog-link {
+    display: inline-block;
+    padding: 10px 20px;
+    color: white;
+    font-family: var(--font-body);
+    font-size: 1rem;
+    text-decoration: none;
+    border-radius: 50px;
+    background-color: var(--primary-color);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    align-self: flex-start;
+  }
+  
+  .Blog-link:hover {
+    background-color: var(--additional-color);
+    transform: scale(1.05);
+  }
+  
+  .view-Blog-btn-container {
+    text-align: center;
+    margin-top: 50px;
+  }
+  
+  .Blog-sec-btn {
+    border-radius: 50px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: var(--text-color-second);
+    background-color: var(--primary-color);
+    padding: 15px 30px;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    display: inline-block;
+  }
+  
+  .Blog-sec-btn:hover {
+    background-color: var(--additional-color);
+    transform: scale(1.05);
+  }
+  
 
 
 
