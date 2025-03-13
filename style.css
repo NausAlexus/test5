@@ -121,8 +121,7 @@ body::-webkit-scrollbar-track {
 }
 
 .nav-list.show {
-    max-height: 500px;
-    opacity: 1;
+    transform: translateX(100%); /* Перемещаем меню на экран */
 }
 
 .burger-menu {
@@ -154,23 +153,29 @@ body::-webkit-scrollbar-track {
 
 @media (max-width: 730px) {
     .nav-list {
-        list-style: none;
-        padding: 0;
-        margin: 0;
-        display: flex;
-        transition: max-height 0.3s ease, opacity 0.3s ease;
-        max-height: 0;
-        overflow: hidden;
-        opacity: 0;
+        position: fixed; /* Закрепляем меню */
+        top: 0; /* Начинаем с верхней части экрана */
+        left: -100%; /* Начальное состояние: меню скрыто слева */
+        width: 100vw; /* Ширина меню на весь экран */
+        height: 100vh; /* Высота на весь экран */
+        background-color: #9a4fba; /* Цвет фона меню */
+        padding: 15px; /* Отступы */
+        transition: transform 0.3s ease; /* Плавный переход */
+        z-index: 999; /* Поверх других элементов */
     }
     .nav-list {
         display: flex;
     }
 
     .burger-menu {
-        display: flex;
-        margin-right: 15px;
+        display: flex; /* Показываем бургер-меню */
+        cursor: pointer;
+        z-index: 1001; /* Предоставляем бургеру высший приоритет */
+        position: fixed;
+        right: 15px; /* Положение бургер-меню */
+        top: 15px; /* Положение бургер-меню */
     }
+    
     .navigation {
         flex-direction: row;
         flex-wrap: wrap;
@@ -214,11 +219,13 @@ body::-webkit-scrollbar-track {
         display: flex;
     }
     .nav-list {
+        text-align: center;
         display: flex;
         flex-direction: column;
-        background-color: #ced413;
+        justify-content: center;
+        background-color: #9a4fba; /* Цвет фона меню */
         position: absolute;
-        top: 60px;
+        top: 0;
         right: 0;
         width: 100%;
         padding: 15px;
@@ -348,6 +355,13 @@ body::-webkit-scrollbar-track {
         flex-direction: column; /* Убеждаемся, что элементы остаются вертикальными на маленьких экранах */
     }
 }
+
+
+
+
+
+
+
 
 
 
