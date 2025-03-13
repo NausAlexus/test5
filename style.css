@@ -821,8 +821,59 @@ body::-webkit-scrollbar-track {
     margin-bottom: 5px;
 }
 
+.privacy-policy {
+    padding: 20px;
+    margin-top: 70px;
+}
 
-  
+.privacy-title, .definition-section-title, .data-collection-title, .tracking-technology-title, .data-sharing-title, .data-retention-title,
+.data-transfer-title, .data-deletion-title, .security-of-personal-data-title, .children-privacy-title, .external-links-title,
+.policy-changes-title, .contact-info-title {
+    font-size: 24px;
+    margin-top: 20px;
+}
+
+.policy-overview, .definition-description, .usage-data-description, .tracking-description, 
+.data-usage-description, .disclosure-description, .retention-info, 
+.transfer-info, .deletion-info, .data-security-info, .children-privacy-info, 
+.external-links-info, .changes-notice {
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+.definition-list, .personal-data-list, .data-usage-list, .disclosure-list {
+    margin-left: 20px;
+}
+
+.email-link {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+/* Responsive behavior */
+@media (max-width: 768px) {
+    .privacy-policy {
+        padding: 10px;
+    }
+
+    .privacy-title {
+        font-size: 20px;
+    }
+
+    .definition-section-title, .data-collection-title, .tracking-technology-title,
+    .data-sharing-title, .data-retention-title, .data-transfer-title, 
+    .data-deletion-title, .security-of-personal-data-title, .children-privacy-title,
+    .external-links-title, .policy-changes-title, .contact-info-title {
+        font-size: 22px;
+    }
+
+    .policy-overview, .definition-description, .usage-data-description, .tracking-description, 
+    .data-usage-description, .disclosure-description, .retention-info, 
+    .transfer-info, .deletion-info, .data-security-info, .children-privacy-info, 
+    .external-links-info, .changes-notice {
+        font-size: 14px;
+    }
+}
 
 
 
@@ -836,8 +887,63 @@ body::-webkit-scrollbar-track {
 
 
 
+.terms-conditions {
+    padding: 20px;
+    margin-top: 70px;
+}
 
+.terms-title, .definition-section-title, .acknowledgment-title, .links-other-websites-title,
+.termination-title, .limitation-liability-title, .disclaimer-title, .governing-law-title, 
+.disputes-resolution-title, .eu-user-title, .us-legal-compliance-title, 
+.severability-waiver-title, .changes-terms-title, .contact-info-title {
+    font-size: 24px;
+    margin-top: 20px;
+}
 
+.terms-intro, .definition-description, .acknowledgment-description, .links-description, 
+.termination-description, .liability-notice, .liability-warning, .liability-exception, 
+.as-is-disclaimer, .governing-law-description, .dispute-notice, .eu-user-notice, 
+.us-compliance-notice, .severability-description, .waiver-description, 
+.translation-description, .changes-notice {
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+.definition-list, .contact-details {
+    margin-left: 20px;
+}
+
+.email-link {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+/* Responsive behavior */
+@media (max-width: 768px) {
+    .terms-conditions {
+        padding: 10px;
+    }
+
+    .terms-title {
+        font-size: 20px;
+    }
+
+    .definition-section-title, .acknowledgment-title, .links-other-websites-title, 
+    .termination-title, .limitation-liability-title, .disclaimer-title, 
+    .governing-law-title, .disputes-resolution-title, .eu-user-title, 
+    .us-legal-compliance-title, .severability-waiver-title, .changes-terms-title, 
+    .contact-info-title {
+        font-size: 22px;
+    }
+
+    .terms-intro, .definition-description, .acknowledgment-description, .links-description, 
+    .termination-description, .liability-notice, .liability-warning, .liability-exception, 
+    .as-is-disclaimer, .governing-law-description, .dispute-notice, .eu-user-notice, 
+    .us-compliance-notice, .severability-description, .waiver-description, 
+    .translation-description, .changes-notice {
+        font-size: 14px;
+    }
+}
 
 
 
@@ -870,5 +976,11 @@ body::-webkit-scrollbar-track {
     }
     .btn-review:hover {
         background-color: #00aeff;
+    }
+    .browser-links a:hover {
+        text-decoration: underline;
+    }
+    .browser-links a:hover, .privacy-link:hover {
+        text-decoration: underline;
     }
 }
