@@ -181,6 +181,10 @@ body::-webkit-scrollbar-track {
         flex-wrap: wrap;
     }
 }
+.form-group{
+    align-items: flex-end;
+    margin-bottom: 20px;
+}
 
 .main-content {
     margin-top: 50px;
@@ -362,14 +366,15 @@ body::-webkit-scrollbar-track {
     max-width: 1200px;
     margin: 0 auto;
     text-align: center;
-    margin-top: 70px;
+    margin-top: 80px;
   }
   
   .signup-heading-context {
-    font-size: 2rem;
+    font-size: 1.5rem;
     color: #ffffff;
     margin-bottom: 40px;
     text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 0 20px;
   }
   
   /* Content Layout */
@@ -379,6 +384,8 @@ body::-webkit-scrollbar-track {
     justify-content: space-between;
     flex-wrap: wrap;
     gap: 30px;
+    margin-bottom: 40px;
+    padding: 0 20px;
   }
   
   /* Image Styling */
@@ -429,6 +436,7 @@ body::-webkit-scrollbar-track {
     display: block;
     width: 100%;
     padding: 12px 20px;
+    margin-top: 20px;
     font-size: 1rem;
     color: #ffffff;
     background: linear-gradient(90deg, #0008ff, #6600ff);
@@ -464,7 +472,7 @@ body::-webkit-scrollbar-track {
   }
   
   /* Responsive Design */
-  @media (max-width: 768px) {
+  @media (max-width: 900px) {
     .signup-content-context {
       flex-direction: column;
       align-items: center;
@@ -473,6 +481,11 @@ body::-webkit-scrollbar-track {
     .signup-image-context img {
       max-width: 80%;
     }
+    .signup-form-wrapper-context{
+        width: 80%;
+        max-width: none;
+    }
+
   }
 
 
@@ -695,6 +708,62 @@ body::-webkit-scrollbar-track {
   .Blog-sec-btn:hover {
     background-color: var(--additional-color);
     transform: scale(1.05);
+  }
+
+
+
+
+
+.app-hero{
+    padding: 0 50px;
+    margin-top: 80px;
+}
+.app-buttons {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .btn {
+    display: inline-block;
+    padding: 14px 30px;
+    font-size: 1rem;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: background 0.3s, transform 0.2s;
+  }
+  
+  .btn.primary,.btn.secondary {
+    background-color: #1e2a3a;
+    color: white;
+    margin: 20px 0;
+  }
+  
+  
+  
+  .btn.primary:hover {
+    background-color: #2d4058;
+    transform: scale(1.05);
+  }
+  
+  .btn.secondary {
+    background: transparent;
+    border: 2px solid #1e2a3a;
+    color: black;
+  }
+  
+  .btn.secondary:hover {
+    background-color: #ced0d2;
+    transform: scale(1.05);
+  }
+  .app-image{
+    width: 100%;
+  }
+  
+  .app-image img{
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
   }
   
 
