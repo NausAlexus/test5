@@ -358,6 +358,127 @@ body::-webkit-scrollbar-track {
 
 
 
+.container-signup-context {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 70px;
+  }
+  
+  .signup-heading-context {
+    font-size: 2rem;
+    color: #ffffff;
+    margin-bottom: 40px;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Content Layout */
+  .signup-content-context {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  
+  /* Image Styling */
+  .signup-image-context img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Form Wrapper */
+  .signup-form-wrapper-context {
+    flex: 1;
+    max-width: 450px;
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    text-align: left;
+  }
+  
+  /* Form Labels */
+  .form-label-context {
+    font-size: 1rem;
+    color: #000000;
+    margin-bottom: 8px;
+    display: block;
+  }
+  
+  /* Form Inputs */
+  .form-input-context {
+    width: 100%;
+    padding: 10px 15px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+  }
+  
+  .form-input-context:focus {
+    border-color: #ffd700;
+    outline: none;
+  }
+  
+  /* Submit Button */
+  .form-button-context {
+    display: block;
+    width: 100%;
+    padding: 12px 20px;
+    font-size: 1rem;
+    color: #ffffff;
+    background: linear-gradient(90deg, #0008ff, #6600ff);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: background 0.3s ease, transform 0.3s ease;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .form-button-context:hover {
+    background: linear-gradient(90deg, #0400ff, #00b7ff);
+    transform: translateY(-2px);
+  }
+  
+  /* Success Message */
+  .form-success-context {
+    font-size: 1rem;
+    color: #2d2d2d;
+    margin-top: 20px;
+    display: none;
+  }
+  
+  .form-success-context.visible {
+    display: block;
+  }
+
+  .privacy-link-contacts {
+    color: #007BFF;
+    transition: color 0.3s ease;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .signup-content-context {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .signup-image-context img {
+      max-width: 80%;
+    }
+  }
+
+
+
+
+
 
 
 
