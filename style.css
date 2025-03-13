@@ -609,6 +609,13 @@ body::-webkit-scrollbar-track {
     gap: 30px;
     padding: 0 20px;
   }
+
+  @media (max-width:850px) {
+    .Blog-grid {
+        grid-template-columns: repeat(1, 1fr); /* Ð”Ð²Ðµ ÐºÐ¾Ð»Ð¾Ð½ÐºÐ¸ */
+      }
+    
+  }
   
   .Blog-block {
     background-color: var(--footer-header-bg);
@@ -768,7 +775,121 @@ body::-webkit-scrollbar-track {
   
 
 
+/* Основные стили */
+.sportiverse-fantasy-games {
+    background-color: #f9f9f9;
+    padding: 60px 0;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+}
 
+.sportiverse-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.sportiverse-fantasy-intro {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.sportiverse-fantasy-title {
+    font-size: 2.5rem;
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+.sportiverse-fantasy-description {
+    font-size: 1.2rem;
+    color: #666;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Стили для карточек игр */
+.sportiverse-fantasy-card {
+    display: flex;
+    align-items: center;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.sportiverse-fantasy-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.sportiverse-fantasy-content {
+    flex: 1;
+    padding: 40px;
+}
+
+.sportiverse-fantasy-card-title {
+    font-size: 2rem;
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+.sportiverse-fantasy-card-text {
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.sportiverse-fantasy-button {
+    display: inline-block;
+    background-color: #9a4fba;
+    color: #fff;
+    padding: 12px 30px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.sportiverse-fantasy-button:hover {
+    background-color: #2980b9;
+}
+
+.sportiverse-fantasy-image {
+    flex: 1;
+}
+
+.sportiverse-fantasy-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Обратный порядок для карточки Football */
+.sportiverse-reverse {
+    flex-direction: row-reverse;
+}
+
+/* Адаптация для мобильных устройств */
+@media (max-width: 768px) {
+    .sportiverse-fantasy-card {
+        flex-direction: column;
+    }
+
+    .sportiverse-reverse {
+        flex-direction: column;
+    }
+
+    .sportiverse-fantasy-content {
+        padding: 20px;
+    }
+
+    .sportiverse-fantasy-image img {
+        height: 200px;
+    }
+}
 
 
 
