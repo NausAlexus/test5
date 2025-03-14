@@ -104,7 +104,7 @@ body::-webkit-scrollbar-track {
 .nav-link {
     font-weight: 100;
     text-decoration: none;
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     font-size: 16px;
     border-bottom: 1px solid transparent;
     transition: color 0.3s ease;
@@ -482,8 +482,9 @@ body::-webkit-scrollbar-track {
       max-width: 80%;
     }
     .signup-form-wrapper-context{
-        width: 80%;
+        width: 100%;
         max-width: none;
+        padding: 30px 8px;
     }
 
   }
@@ -1250,7 +1251,7 @@ body::-webkit-scrollbar-track {
     align-items: start;
 }
 
-@media (max-width:700px) {
+@media (max-width:1230px) {
     .sportiverse-features-layout{
         display: flex;
         flex-direction: column;
@@ -1643,10 +1644,7 @@ body::-webkit-scrollbar-track {
     transition: background-color 0.3s, transform 0.3s;
 }
 
-.app-order-button:hover {
-    background-color: #E64A19;
-    transform: scale(1.05);
-}
+
 
 .sport-making-process {
     padding: 3rem 1rem;
@@ -1725,6 +1723,14 @@ body::-webkit-scrollbar-track {
     
     .sport-details-text {
         font-size: 0.8rem; /* Further reduce text size */
+    }
+    .app-promo-card {
+        max-width: 100%;
+        padding: 30px 5px;
+    }
+    .app-order-button {
+        padding: 10px;
+        font-size: 1rem;
     }
 }
 
@@ -2489,9 +2495,43 @@ body::-webkit-scrollbar-track {
     }
 }
 
+.form-flex {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+
+}
+
+.agree-color {
+    color: black;
+}
 
 
+@media (max-width: 700px) {
+    .form-flex {
+        display: flex;
+        align-items: center;
+        gap: 6px;
+    }
+}
 
+@media (max-width: 460px) {
+    .agree-color {
+        font-size: 12px;
+    }
+    .privaci-size {
+        font-size: 12px;    
+    }
+}
+
+@media (max-width: 250px) {
+    .agree-color {
+        font-size: 10px;
+    }
+    .privaci-size {
+        font-size: 10px;    
+    }
+}
 
 
 
@@ -2505,7 +2545,7 @@ body::-webkit-scrollbar-track {
         color: rgb(0, 0, 0);
     }
     .nav-link:hover {
-        color: rgb(176, 176, 176);
+        color: rgb(0, 0, 0);
     }
     .footer-location:hover,
     .footer-phone:hover,
@@ -2530,5 +2570,9 @@ body::-webkit-scrollbar-track {
     .sport-select__learn-more-btn:hover {
         background-color: #8c33b3;
         color: #a6ff00;
+    }
+    .app-order-button:hover {
+        background-color: #E64A19;
+        transform: scale(1.05);
     }
 }
